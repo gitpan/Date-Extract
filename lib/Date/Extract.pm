@@ -18,11 +18,11 @@ Date::Extract - extract probable dates from strings
 
 =head1 VERSION
 
-Version 0.01 released 13 Dec 07
+Version 0.02 released 13 Feb 08
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -231,7 +231,7 @@ sub _build_regex {
     my $monthday          = "(?:$cardinal_monthday(?:st|nd|rd|th)?)";
 
     my $day_month         = "(?:$monthday\\s*$month)";
-    my $month_day         = "(?:$monthday\\s*$month)";
+    my $month_day         = "(?:$month\\s*$monthday)";
     my $day_month_year    = "(?:(?:$day_month|$month_day)\\s*,\\s*\\d\\d\\d\\d)";
 
     my $yyyymmdd          = "(?:\\d\\d\\d\\d[-/]\\d\\d[-/]\\d\\d)";
