@@ -18,11 +18,11 @@ Date::Extract - extract probable dates from strings
 
 =head1 VERSION
 
-Version 0.02 released 13 Feb 08
+Version 0.03 released 12 May 08
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -129,7 +129,7 @@ sub new {
     my %args = (
         returns => 'first',
         prefers => 'nearest',
-        time_zone => 'Floating',
+        time_zone => 'floating',
         @_,
     );
 
@@ -414,7 +414,7 @@ We still use it, but it doesn't quite fill all the particular needs we have.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Best Practical Solutions.
+Copyright 2007-2008 Best Practical Solutions.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

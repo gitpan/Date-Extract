@@ -1,11 +1,12 @@
 --- 
 abstract: extract probable dates from strings
-author: Shawn M Moore, C<< <sartak at gmail.com> >>
+author: 
+  - Shawn M Moore, C<< <sartak at gmail.com> >>
 build_requires: 
   Test::MockTime: 0
   Test::More: 0
 distribution_type: module
-generated_by: Module::Install version 0.67
+generated_by: Module::Install version 0.68
 license: perl
 meta-spec: 
   url: http://module-build.sourceforge.net/META-spec-v1.3.html
@@ -21,4 +22,4 @@ requires:
   DateTime::Format::Natural: 0.60
   List::Util: 0
   parent: 0
-version: 0.02
+version: 0.03
